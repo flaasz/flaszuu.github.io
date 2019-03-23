@@ -3,7 +3,6 @@
     src: url("../fonts/Quarz\ 974\ Light.ttf");
 }
 
-@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 
@@ -2650,7 +2649,7 @@ input, select, textarea {
 
 	#footer {
 		position: fixed;
-		bottom: 5%;
+		bottom: 10px;
 		width: 100%;
 		text-align: center;
 	}
@@ -2948,11 +2947,6 @@ input, select, textarea {
 				margin: 0;
 			}
 
-		/* Footer */
-
-			#footer {
-				padding: 4em 1.5em;
-			}
 
 		/* Nav */
 
@@ -2969,10 +2963,6 @@ input, select, textarea {
 			}
 
 			#navButton {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -2981,56 +2971,24 @@ input, select, textarea {
 				height: 60px;
 				left: 0;
 				position: fixed;
-				top: 0;
+				top: 0.5%;
 				width: 100%;
 				z-index: 10001;
 			}
 
-				#navButton .toggle {
+				#navButton a{
 					text-decoration: none;
 					height: 60px;
-					left: 0;
+					left: 2%;
 					position: absolute;
-					text-align: center;
-					top: 0;
+					font-size: 1.5em;
+					top: 2%;
 					width: 100%;
 					border: 0;
 					outline: 0;
+					color: #fff;
 				}
 
-					#navButton .toggle:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						font-family: FontAwesome;
-						font-style: normal;
-						font-weight: normal;
-						text-transform: none !important;
-					}
-
-					#navButton .toggle:before {
-						color: #fff;
-						content: '\f0c9';
-						font-size: 1em;
-						height: 40px;
-						left: 10px;
-						line-height: 40px;
-						opacity: 0.5;
-						position: absolute;
-						top: 11px;
-						width: 60px;
-						z-index: 1;
-					}
-
-					#navButton .toggle:after {
-						background: rgba(163, 169, 170, 0.75);
-						border-radius: 2px;
-						content: '';
-						height: 40px;
-						left: 10px;
-						position: absolute;
-						top: 10px;
-						width: 60px;
-					}
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -3276,13 +3234,6 @@ input, select, textarea {
 				background-size: 10em, 10em, auto, cover;
 				padding: 3em 1.5em;
 			}
-
-		/* Footer */
-
-			#footer {
-				padding: 3em 1.5em;
-			}
-
 				#footer .copyright li {
 					display: block;
 					margin: 1em 0 0 0;
@@ -3290,22 +3241,7 @@ input, select, textarea {
 					border: 0;
 				}
 
-		/* Nav */
 
-			#navButton .toggle:before {
-				top: 8px;
-				left: 8px;
-				width: 50px;
-				height: 34px;
-				line-height: 34px;
-			}
-
-			#navButton .toggle:after {
-				top: 8px;
-				left: 8px;
-				width: 50px;
-				height: 34px;
-			}
 
 	}
 
