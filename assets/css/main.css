@@ -3,7 +3,15 @@
 	src: url("../fonts/Quarz\ 974\ Light.ttf");
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+@font-face {
+	font-family: "Caviar Dreams";
+	src: url("../fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+	font-family: "Caviar Dreams Bold";
+	src: url("../fonts/CaviarDreams_Bold.ttf");
+}
 
 
 html,
@@ -193,7 +201,7 @@ body,
 input,
 select,
 textarea {
-	color: #7c8081;
+	color: #fff;
 	font-family: 'quarz974', sans-serif;
 	font-size: 15pt;
 	font-weight: 300;
@@ -225,7 +233,7 @@ ol,
 dl,
 table,
 blockquote {
-	margin: 0 0 2em 0;
+	margin: 0;
 }
 
 h1,
@@ -1849,6 +1857,7 @@ header.special {
 
 header.special:before,
 header.special:after {
+	border-color: #fff;
 	border-bottom: solid 1.5px;
 	border-top: solid 1.5px;
 	content: '';
@@ -1882,7 +1891,8 @@ header.special .icon {
 	left: 0;
 	position: absolute;
 	text-align: center;
-	top: 1em;
+	top: 0.5em;
+	color: #272727;
 	width: 100%;
 }
 
@@ -2000,6 +2010,7 @@ input[type="email"] {
 .icon {
 	text-decoration: none;
 	position: relative;
+	font-size: 40px;
 }
 
 .icon:before {
@@ -2009,90 +2020,6 @@ input[type="email"] {
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
-}
-
-.icon.circle {
-	-moz-transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-	border: 0;
-	border-radius: 100%;
-	display: inline-block;
-	font-size: 1.25em;
-	height: 2.25em;
-	left: 0;
-	line-height: 2.25em;
-	text-align: center;
-	text-decoration: none;
-	top: 0;
-	width: 2.25em;
-}
-
-.icon.circle:hover {
-	top: -0.2em;
-}
-
-.icon.circle.fa-twitter {
-	background: #70aecd;
-	color: #fff;
-}
-
-.icon.circle.fa-twitter:hover {
-	background: #7fb7d2;
-}
-
-.icon.circle.fa-facebook {
-	background: #7490c3;
-	color: #fff;
-}
-
-.icon.circle.fa-facebook:hover {
-	background: #829bc9;
-}
-
-.icon.circle.fa-google-plus {
-	background: #db6b67;
-	color: #fff;
-}
-
-.icon.circle.fa-google-plus:hover {
-	background: #df7b77;
-}
-
-.icon.circle.fa-github {
-	background: #dcad8b;
-	color: #fff;
-}
-
-.icon.circle.fa-github:hover {
-	background: #e1b89b;
-}
-
-.icon.circle.fa-dribbble {
-	background: #da83ae;
-	color: #fff;
-}
-
-.icon.circle.fa-dribbble:hover {
-	background: #df93b8;
-}
-
-.icon.featured {
-	cursor: default;
-	display: block;
-	margin: 0 0 1.5em 0;
-	opacity: 0.35;
-	text-align: center;
-}
-
-.icon.featured:before {
-	font-size: 5em;
-	line-height: 1em;
-}
-
-.icon>.label {
-	display: none;
 }
 
 /* List */
@@ -2394,7 +2321,8 @@ button.small,
 }
 
 #header {
-	background: #fff;
+	background: #000;
+	color: #fff;
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 	color: inherit;
 	letter-spacing: 10px;
@@ -2419,7 +2347,7 @@ button.small,
 
 #header nav {
 	letter-spacing: 0.075em;
-	position: absolute;
+	position: fixed;
 	right: 1.5em;
 	text-transform: uppercase;
 	top: 0.75em;
@@ -2486,36 +2414,8 @@ button.small,
 	transition: all 0.2s ease-in-out;
 }
 
-#header nav ul li.current>a {
-	font-weight: 900;
-}
-
-#header.reveal {
-	-moz-animation: reveal-header 0.5s;
-	-webkit-animation: reveal-header 0.5s;
-	-ms-animation: reveal-header 0.5s;
-	animation: reveal-header 0.5s;
-}
-
-#header.alt {
-	-moz-animation: none;
-	-webkit-animation: none;
-	-ms-animation: none;
-	animation: none;
-	background: transparent;
-	box-shadow: none;
-	color: #fff;
-	padding: 2em 2.5em;
-	position: absolute;
-}
-
-#header.alt nav {
-	right: 2.5em;
-	top: 1.17em;
-}
-
-#header.alt nav ul li.active>a,
-#header.alt nav ul li:hover>a {
+#header nav ul li.active>a,
+#header nav ul li:hover>a {
 	border: solid 1px;
 }
 
@@ -2577,7 +2477,6 @@ button.small,
 /*Banner*/
 
 #banner {
-	color: #fff;
 	cursor: default;
 	text-align: center;
 	font-size: 700%;
@@ -2588,11 +2487,17 @@ button.small,
 	display: inline-block;
 }
 
+#banner h2 {
+	color: #fff;
+}
+
 
 
 /* Main */
 
 #main {
+	font-family: "Caviar Dreams";
+	margin-top: 50%;
 	background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
 	background-position: top left, top right, bottom left, bottom right;
 	background-repeat: no-repeat;
@@ -2647,21 +2552,23 @@ body.index #main {
 	text-align: center;
 }
 
-#footer .icons a {
+#footer ul li a {
 	border: none;
 	color: #fff;
 	font-size: 30px;
-	background: #000;
-	border-radius: 50%;
-	padding: 5px 8px;
+	padding: 5px;
+}
+
+#footer ul li.active>a,
+#footer ul li:hover>a {
 	-moz-transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
-
 }
 
-#footer .icons li:hover {
+#footer ul li.active>a,
+#footer ul li:hover>a {
 	transform: scale(1.2);
 }
 
@@ -3260,10 +3167,11 @@ body.index #main {
 
 .temp {
 	position: absolute;
+	top: 0;
 	width: 100%;
 	height: 100vh;
 	background: url(temp.gif) no-repeat 50% 50%;
-	background-size: cover;
+	background-size: auto;
 	animation: fadeOut 5s linear forwards;
 	opacity: 1;
 }
@@ -3296,6 +3204,7 @@ body.index #main {
 
 .first-block {
 	position: absolute;
+	top: 0;
 	width: 0%;
 	height: 100vh;
 	background: #1c2021;
@@ -3322,6 +3231,7 @@ body.index #main {
 
 .second-block {
 	position: absolute;
+	top: 0;
 	width: 0%;
 	height: 100vh;
 	background: #1c2021;
@@ -3346,7 +3256,7 @@ body.index #main {
 	display: inline-block;
 	color: #fff;
 	font-family: quarz974;
-	font-weight: bolder;
+	font-weight: 1000;
 	margin: 0 8px;
 	font-size: 24px;
 	text-transform: uppercase;
@@ -3407,6 +3317,7 @@ body.index #main {
 
 .third-block {
 	position: absolute;
+	top: 0;
 	width: 0%;
 	height: 100vh;
 	background: #000;
