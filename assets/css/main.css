@@ -2465,7 +2465,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Banner */
+/* Banner 
 
 	@-moz-keyframes reveal-banner {
 		0% {
@@ -2505,94 +2505,19 @@ input, select, textarea {
 		100% {
 			opacity: 1;
 		}
-	}
+	}*/
 
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: none;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
 		color: #fff;
 		cursor: default;
 		text-align: center;
-	}
-
-		#banner{
-			-moz-animation: reveal-banner 1s 1s ease-in-out;
-			-webkit-animation: reveal-banner 1s 1s ease-in-out;
-			-ms-animation: reveal-banner 1s 1s ease-in-out;
-			animation: reveal-banner 1s 1s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-			font-size: 700%;
-			color: #fff;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			display: inline-block;
-			opacity: 0;
-			text-align: center;
-		}
-
-/* footer */
-
-@-moz-keyframes reveal-footer {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
+		font-size: 700%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: inline-block;
 		opacity: 1;
-	}
-}
-
-@-webkit-keyframes reveal-footer {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@-ms-keyframes reveal-footer {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes reveal-footer {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-
-
-	#footer{
-		-moz-animation: reveal-footer 1s 1s ease-in-out;
-		-webkit-animation: reveal-footer 1s 1s ease-in-out;
-		-ms-animation: reveal-footer 1s 1s ease-in-out;
-		animation: reveal-footer 1s 1s ease-in-out;
-		-moz-animation-fill-mode: forwards;
-		-webkit-animation-fill-mode: forwards;
-		-ms-animation-fill-mode: forwards;
-		animation-fill-mode: forwards;
-		opacity: 0;
 	}
 
 
