@@ -3158,7 +3158,7 @@ input, select, textarea {
 		position: absolute;
 		width: 0%;
 		height: 100vh;
-		background: #272727;
+		background: #1c2021;
 		animation: go-left 4s cubic-bezier(.74, .06, .4, .92) forwards;
 		left: 0;
   }
@@ -3182,7 +3182,7 @@ input, select, textarea {
 		position: absolute;
 		width: 0%;
 		height: 100vh;
-		background: #272727;
+		background: #1c2021;
 		animation: go-left 3.2s cubic-bezier(.74, .06, .4, .92) forwards;
 		animation-delay: 3s;
   }
@@ -3278,4 +3278,3 @@ input, select, textarea {
 			  width: 64%;
 		}
   }
-  
