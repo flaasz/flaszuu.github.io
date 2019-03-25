@@ -2489,6 +2489,8 @@ button.small,
 
 #banner h2 {
 	color: #fff;
+	width: 100%;
+	letter-spacing: 0;
 }
 
 #banner h2 span {
@@ -3342,5 +3344,16 @@ body.index #main {
 
 	100% {
 		width: 64%;
+	}
+}
+
+/* Logo Mobile Fix */
+@media screen and (max-width: 736px) {
+	#banner h2 {
+		font-size: 80%;
+	}
+	.loader ul li{
+		font-size: 20px;
+		margin: 0 1px;
 	}
 }
