@@ -3255,7 +3255,7 @@ body.index #contact {
 	top: 0;
 	width: 100%;
 	height: 100vh;
-	background: url(temp1.gif) no-repeat 50% 50%;
+	background: url(temp.gif) no-repeat 50% 50%;
 	background-size: auto;
 	animation: fadeOut 5s linear forwards;
 	opacity: 1;
