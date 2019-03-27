@@ -2537,6 +2537,7 @@ button.small,
 body.index #main {
 	padding-top: 5em;
 }
+
 /* Main */
 
 #work {
@@ -2570,6 +2571,7 @@ body.index #main {
 body.index #work {
 	padding-top: 5em;
 }
+
 /* Main */
 
 #contact {
@@ -2631,7 +2633,7 @@ body.index #contact {
 	text-align: center;
 }
 
-#footer a i{
+#footer a i {
 	cursor: pointer;
 }
 
@@ -3290,7 +3292,7 @@ body.index #contact {
 	top: 0;
 	width: 0%;
 	height: 100vh;
-	background: #1c2021;
+	background: #0a0c0c;
 	animation: go-left 4s cubic-bezier(.74, .06, .4, .92) forwards;
 	left: 0;
 }
@@ -3317,7 +3319,7 @@ body.index #contact {
 	top: 0;
 	width: 0%;
 	height: 100vh;
-	background: #1c2021;
+	background: #0a0c0c;
 	animation: go-left 3.2s cubic-bezier(.74, .06, .4, .92) forwards;
 	animation-delay: 3s;
 }
@@ -3340,7 +3342,7 @@ body.index #contact {
 	color: #fff;
 	font-family: quarz974;
 	font-weight: 1000;
-	margin: 0 8px;
+	padding: 4px 8px;
 	font-size: 32px;
 	text-transform: uppercase;
 	animation: loadNow 4s ease-in-out forwards;
@@ -3426,6 +3428,6 @@ body.index #contact {
 
 	.loader ul li {
 		font-size: 20px;
-		margin: 0 1px;
+		padding: 1px 1px;
 	}
 }
