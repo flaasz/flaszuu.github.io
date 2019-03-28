@@ -3292,7 +3292,7 @@ body.index #contact {
 	top: 0;
 	width: 0%;
 	height: 100vh;
-	background: #0a0c0c;
+	background: #1a1a1a;
 	animation: go-left 4s cubic-bezier(.74, .06, .4, .92) forwards;
 	left: 0;
 }
@@ -3319,7 +3319,7 @@ body.index #contact {
 	top: 0;
 	width: 0%;
 	height: 100vh;
-	background: #0a0c0c;
+	background: #1a1a1a;
 	animation: go-left 3.2s cubic-bezier(.74, .06, .4, .92) forwards;
 	animation-delay: 3s;
 }
