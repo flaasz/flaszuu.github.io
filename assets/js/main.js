@@ -97,3 +97,27 @@
 	}
 
 })(jQuery);
+
+TweenMax.staggerFrom(".icons li", 1, {
+	delay: 6,
+	opacity: 0,
+	y: 40,
+	ease: Expo.easeInOut
+}, 0.2);
+TweenMax.from("#header", 1.6, {
+	delay: 5.5,
+	opacity: 0,
+	y: 30,
+	ease: Expo.easeInOut
+});
+TweenMax.from("#banner", 1.6, {
+	delay: 7,
+	opacity: 0,
+	y: -30,
+	ease: Expo.easeInOut
+});
+TweenMax.from("#blogo", 1, {
+	delay: 8,
+	rotation: 0,
+	ease: Expo.easeInOut
+});
