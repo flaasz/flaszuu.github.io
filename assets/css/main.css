@@ -2657,7 +2657,17 @@ body.index #contact {
 	transform: scale(1.2);
 }
 
-
+.bottom {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 65px;
+	width: 250px;
+	background: #000;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
 
 /* Wide */
 

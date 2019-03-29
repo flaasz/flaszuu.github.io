@@ -120,3 +120,9 @@ TweenMax.from("#blogo", 1, {
 	rotation: 0,
 	ease: Expo.easeInOut
 });
+TweenMax.from(".bottom", 1.6, {
+	delay: 5.5,
+	opacity: 0,
+	y: 30,
+	ease: Expo.easeInOut
+});
