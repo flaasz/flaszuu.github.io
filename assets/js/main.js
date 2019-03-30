@@ -115,9 +115,9 @@ TweenMax.from("#banner", 1.6, {
 	y: -30,
 	ease: Expo.easeInOut
 });
-TweenMax.from("#blogo", 1, {
+TweenMax.from("#banner", 1, {
 	delay: 8,
-	rotation: 0,
+	rotation: -360,
 	ease: Expo.easeInOut
 });
 TweenMax.from(".bottom", 1.6, {
@@ -126,3 +126,7 @@ TweenMax.from(".bottom", 1.6, {
 	y: 30,
 	ease: Expo.easeInOut
 });
+
+function goBack() {
+	window.history.back();
+}

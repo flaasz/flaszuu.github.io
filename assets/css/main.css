@@ -213,7 +213,7 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	color: #3fb1a3;
+	color: #fff;
 	text-decoration: none;
 	border-bottom: dotted 1px;
 }
@@ -2273,7 +2273,7 @@ button.small,
 }
 
 .wrapper.style4 {
-	background: #fff;
+	background: #1a1a1a;
 	color: inherit;
 	padding: 4em;
 }
@@ -2480,7 +2480,7 @@ button.small,
 #banner {
 	cursor: default;
 	text-align: center;
-	font-size: 700%;
+	font-size: 900%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -2494,13 +2494,6 @@ button.small,
 	letter-spacing: 0;
 }
 
-#banner h2 span {
-	display: inline-block;
-	-moz-transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
 
 
 
@@ -2661,7 +2654,7 @@ body.index #contact {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	height: 65px;
-	width: 250px;
+	width: 200px;
 	background: #000;
 	position: fixed;
 	bottom: 0;
@@ -3410,16 +3403,6 @@ body.index #contact {
 	animation-delay: 1.7s;
 }
 
-.third-block {
-	position: absolute;
-	top: 0;
-	width: 0%;
-	height: 100vh;
-	background: #000;
-	animation: expandNow 1.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-	animation-delay: 6.2s;
-}
-
 @keyframes expandNow {
 	0% {
 		width: 0%;
@@ -3440,4 +3423,55 @@ body.index #contact {
 		font-size: 20px;
 		padding: 1px 1px;
 	}
+}
+
+
+/*popups*/
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: 500ms ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Caviar Dreams", sans-serif;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
+
+.box {
+	max-width: 50%;
+	max-height: 90%;
+	padding: 40px 0;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #1a1a1a;
+	z-index: 2;
+}
+
+.box p,
+h2 {
+	text-align: center;
+}
+
+.close a {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 100%
+}
+
+.overlay:target .close a {
+	height: 100%;
+	z-index: 2;
 }
