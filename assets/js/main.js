@@ -104,30 +104,30 @@
 })(jQuery);
 
 TweenMax.staggerFrom(".icons li", 1, {
-	delay: 6,
+	delay: 2,
 	opacity: 0,
 	y: 40,
 	ease: Expo.easeInOut
 }, 0.2);
 TweenMax.from("#header", 1.6, {
-	delay: 5.5,
+	delay: 1.5,
 	opacity: 0,
 	y: 30,
 	ease: Expo.easeInOut
 });
 TweenMax.from("#banner", 1.6, {
-	delay: 7,
+	delay: 2.5,
 	opacity: 0,
 	y: -30,
 	ease: Expo.easeInOut
 });
 TweenMax.from("#banner", 1, {
-	delay: 7.5,
+	delay: 3,
 	rotation: -360,
 	ease: Expo.easeInOut
 });
 TweenMax.from(".bottom", 1.6, {
-	delay: 5.5,
+	delay: 1.5,
 	opacity: 0,
 	y: 30,
 	ease: Expo.easeInOut
