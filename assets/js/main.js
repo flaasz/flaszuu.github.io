@@ -52,6 +52,12 @@
 			'<nav>' +
 			$('#nav').navList() +
 			'</nav>' +
+			`<ul>` +
+			`<li><a href="https://github.com/flaszuu"><i class="fa fa-github"></i></a></li>` +
+			`<li><a href="https://www.instagram.com/bartekprofic/"><i class="fa fa-instagram"></i></a></li>` +
+			`<li><a href="#popup"><i class="fa fa-facebook-square"></i></a></li>` +
+			`<li><a href="https://discord.gg/FbCpvZx"><i class="fa fa-discord-alt"></i></a></li>` +
+			`</ul>` +
 			'</div>'
 		)
 		.appendTo($body)
@@ -116,7 +122,7 @@ TweenMax.from("#banner", 1.6, {
 	ease: Expo.easeInOut
 });
 TweenMax.from("#banner", 1, {
-	delay: 8,
+	delay: 7.5,
 	rotation: -360,
 	ease: Expo.easeInOut
 });
