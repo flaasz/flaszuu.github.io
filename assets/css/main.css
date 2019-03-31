@@ -2739,10 +2739,6 @@ body.index #main {
 		padding: 0 2.5em;
 	}
 
-	.wrapper.style2 {
-		background-size: 15em;
-	}
-
 	.wrapper.style4 {
 		padding: 2.5em;
 	}
@@ -3160,7 +3156,6 @@ body.index #main {
 	}
 
 	.wrapper.style2 {
-		background-size: 10em;
 		padding: 2.25em 1.5em;
 	}
 
