@@ -3193,13 +3193,6 @@ body.index #main {
 		padding: 3em 1.5em;
 	}
 
-	#footer .copyright li {
-		display: block;
-		margin: 1em 0 0 0;
-		padding: 0;
-		border: 0;
-	}
-
 	#footer {
 		height: 0;
 		width: 0;
@@ -3209,8 +3202,19 @@ body.index #main {
 	.bottom {
 		height: 0;
 	}
+}
 
-
+.copyright {
+	position:  absolute;
+	bottom: 100px;
+	width: 100%;
+	font-family: "Caviar Dreams", sans-serif;
+}
+.copyright p {
+	position: absolute;
+	display: block;
+	left: 50%;
+	transform: translateX( -50%);
 }
 
 /* Landing */
