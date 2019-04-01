@@ -2218,6 +2218,7 @@ button.small,
 .button.small {
 	font-size: 0.7em;
 	min-width: 14em;
+	margin-top: 40px;
 	padding: 0.5em 0;
 }
 
