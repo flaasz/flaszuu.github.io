@@ -3200,16 +3200,17 @@ body.index #main {
 }
 
 .copyright {
-	position:  absolute;
+	position: absolute;
 	bottom: 100px;
 	width: 100%;
 	font-family: "Caviar Dreams", sans-serif;
 }
+
 .copyright p {
 	position: absolute;
 	display: block;
 	left: 50%;
-	transform: translateX( -50%);
+	transform: translateX(-50%);
 }
 
 /* Landing */
@@ -3336,6 +3337,10 @@ body.index #main {
 		font-size: 20px;
 		padding: 0;
 	}
+
+	.copyright {
+		bottom: 0;
+	}
 }
 
 
@@ -3388,8 +3393,4 @@ h2 {
 .overlay:target .close a {
 	height: 100%;
 	z-index: 2;
-}
-
-.copyright {
-	bottom: 0;
 }
