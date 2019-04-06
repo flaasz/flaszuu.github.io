@@ -2544,7 +2544,7 @@ body.index #main {
 #cta {
 	background-attachment: scroll, scroll, scroll, fixed;
 	background-color: #645862;
-	background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+	background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("../../images/banner.jpg");
 	background-position: top left, top right, top left, bottom center;
 	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 	background-size: 25em, 25em, auto, cover;
@@ -2926,6 +2926,7 @@ body.index #main {
 		text-decoration: none;
 		height: 60px;
 		left: 2%;
+		padding: 10px;
 		position: absolute;
 		font-size: 1.5em;
 		top: 2%;
