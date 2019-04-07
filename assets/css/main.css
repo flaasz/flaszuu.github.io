@@ -2231,6 +2231,11 @@ button.small,
 
 .wrapper.style1 {
 	padding: 0;
+	transition: 700ms ease-in-out;
+}
+
+.wrapper.style1.backed {
+	transform: scale(0.5);
 }
 
 .wrapper.style2 {
@@ -3395,4 +3400,99 @@ h2 {
 .overlay:target .close a {
 	height: 100%;
 	z-index: 2;
+}
+/* Background movement*/
+
+.background img {
+	width: 40%;
+}
+
+.background .col1 {
+	position: absolute;
+	left: 10%;
+	top: 110%;
+}
+
+.background .col2 {
+	position: absolute;
+	left: 10%;
+	top: 320%;
+}
+
+.background .col3 {
+	position: absolute;
+	left: 10%;
+	top: 420%;
+}
+
+.background .col4 {
+	position: absolute;
+	left: 30%;
+	top: 190%;
+}
+
+.background .col5 {
+	position: absolute;
+	left: 30%;
+	top: 270%;
+}
+
+.background .col6 {
+	position: absolute;
+	left: 30%;
+	top: 340%;
+}
+
+.background .col7 {
+	position: absolute;
+	left: 50%;
+	top: 120%;
+}
+
+.background .col8 {
+	position: absolute;
+	left: 50%;
+	top: 220%;
+}
+
+.background .col9 {
+	position: absolute;
+	left: 50%;
+	top: 320%;
+}
+
+.background .col10 {
+	position: absolute;
+	left: 70%;
+	top: 340%;
+}
+
+.background .col11 {
+	position: absolute;
+	left: 70%;
+	top: 190%;
+}
+
+.background .col12 {
+	position: absolute;
+	left: 70%;
+	top: 430%;
+}
+
+.background .col13 {
+	position: absolute;
+	left: 90%;
+	top: 110%;
+}
+
+.background .col14 {
+	position: absolute;
+	left: 90%;
+	top: 270%;
+}
+
+.background .col15 {
+	position: absolute;
+	left: 90%;
+	top: 340%;
 }

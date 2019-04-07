@@ -4,6 +4,7 @@
 		$body = $('body'),
 		$header = $('#header'),
 		$banner = $('#banner');
+		$con = $('#con')
 
 	// Breakpoints.
 	breakpoints({
@@ -82,6 +83,18 @@
 		$header.hasClass('alt') &&
 		$banner.length > 0) {
 
+		$('#open').scrollex({
+			terminate: function () {
+				$con.addClass('backed');
+			},
+			enter: function () {
+				$con.removeClass('backed');
+			},
+			leave: function () {
+				$con.addClass('backed');
+			}
+		});
+
 		$window.on('load', function () {
 
 			$banner.scrollex({
@@ -118,7 +131,6 @@ TweenMax.from("#header", 1.6, {
 TweenMax.from("#banner", 1.6, {
 	delay: 2.5,
 	opacity: 0,
-	y: -30,
 	ease: Expo.easeInOut
 });
 TweenMax.from("#banner", 1, {
@@ -136,3 +148,5 @@ TweenMax.from(".bottom", 1.6, {
 function goBack() {
 	window.history.back();
 }
+
+var rellax = new Rellax('.rellax');
